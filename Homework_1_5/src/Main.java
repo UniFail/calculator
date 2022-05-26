@@ -57,6 +57,16 @@ public class Main {
                 System.out.print(mas3[ij]);
 
         }
+        //Task 4
+        System.out.println("\n");
+        for (int i = 0; i < mas1.length ; i++) {
+            if (mas1[i] % 2 != 0)
+                mas1[i] = mas1[i] + 1;
+            if (i != 0)
+                System.out.print("," + mas1[i]);
+            else
+                System.out.print(mas1[i]);
+        }
         System.out.println("\n");
     }
 }
