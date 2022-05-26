@@ -31,6 +31,32 @@ public class Main {
                 System.out.print("," + mas3[ij]);
 
         }
+
+        System.out.println("\n");
+        for (int i = mas1.length - 1; i >= 0 ; i--) {
+            if (i != 0)
+                System.out.print(mas1[i] + ",");
+            else
+                System.out.print(mas1[i]);
+        }
+
+        System.out.println("\n");
+        for (int j = mas2.length - 1; j >= 0 ; j--) {
+            if (j != 0)
+                System.out.print(mas2[j] + ",");
+            else {
+                System.out.print(mas2[j]);
+            }
+
+        }
+        System.out.println("\n");
+        for (int ij = mas3.length - 1; ij >= 0 ; ij--) {
+            if (ij != 0)
+                System.out.print(mas3[ij] + ",");
+            else
+                System.out.print(mas3[ij]);
+
+        }
         System.out.println("\n");
     }
 }
