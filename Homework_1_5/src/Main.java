@@ -1,72 +1,19 @@
+import java.util.*;
+
 public class Main {
+
     public static void main(String[] args) {
-        int[] mas1 = new int[3];
-        mas1[0] = 1;
-        mas1[1] = 2;
-        mas1[2] = 3;
-        for (int i = 0; i < mas1.length; i++) {
-            if (i == 0)
-                System.out.print(mas1[i]);
-            else
-                System.out.print("," + mas1[i]);
-        }
 
-
-        System.out.println("\n");
-        double mas2[] = {1.57, 7.654, 9.986};
-        for (int j = 0; j < mas2.length; j++) {
-            if (j == 0)
-                System.out.print(mas2[j]);
-            else {
-                System.out.print("," + mas2[j]);
-            }
-
-        }
-        System.out.println("\n");
-        int mas3[] = {1, 2, 3, 4, 5, 6};
-        for (int ij = 0; ij < mas3.length; ij++) {
-            if (ij == 0)
-                System.out.print(mas3[ij]);
-            else
-                System.out.print("," + mas3[ij]);
-
-        }
-
-        System.out.println("\n");
-        for (int i = mas1.length - 1; i >= 0 ; i--) {
-            if (i != 0)
-                System.out.print(mas1[i] + ",");
-            else
-                System.out.print(mas1[i]);
-        }
-
-        System.out.println("\n");
-        for (int j = mas2.length - 1; j >= 0 ; j--) {
-            if (j != 0)
-                System.out.print(mas2[j] + ",");
-            else {
-                System.out.print(mas2[j]);
-            }
-
-        }
-        System.out.println("\n");
-        for (int ij = mas3.length - 1; ij >= 0 ; ij--) {
-            if (ij != 0)
-                System.out.print(mas3[ij] + ",");
-            else
-                System.out.print(mas3[ij]);
-
-        }
-        //Task 4
-        System.out.println("\n");
-        for (int i = 0; i < mas1.length ; i++) {
-            if (mas1[i] % 2 != 0)
-                mas1[i] = mas1[i] + 1;
-            if (i != 0)
-                System.out.print("," + mas1[i]);
-            else
-                System.out.print(mas1[i]);
-        }
-        System.out.println("\n");
+            public static void main(String[] args) {
+                int[] mas1 = new int[3];
+                mas1[0] = 1;
+                mas1[1] = 2;
+                mas1[2] = 3;
+                for (int i = 0; i < mas1.length; i++) {
+                    if (i == 0)
+                        System.out.print(mas1[i]);
+                    else
+                        System.out.print("," + mas1[i]);
+                }
     }
 }
