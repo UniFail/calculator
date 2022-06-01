@@ -1,6 +1,6 @@
 import java.util.Arrays;
 public class Main {
-    public static int[] generateRandomArray() {
+    private static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
@@ -13,14 +13,16 @@ public class Main {
         //Task 1
     int[] arr = generateRandomArray();
         float sum = 0;
-        int max = -1;
-        int min = -1;
-        for (int i = 0; i < arr.length - 1; i++) {
+        int max = arr[0];
+        int min = arr[0];
+        for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-                if (arr[i] > arr[i + 1])
+                if (arr[i] > max) {
                     max = arr[i];
-                if (arr[i] < arr[i + 1])
+                }
+                if (min > arr[i]) {
                     min = arr[i];
+                }
 
         }
         System.out.println("Monthly expenses " + sum + " Rub");
