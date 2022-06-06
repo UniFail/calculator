@@ -36,6 +36,21 @@ public class Main {
         }
     }
 
+    //Task 3
+    public static int Delivery(int distance){
+        int days = 0;
+        if (distance < 20){
+            days = 1;
+        }
+        if (distance >= 20 && distance < 60){
+            days = 2;
+        }
+        if (distance >= 60 && distance < 100){
+            days = 3;
+        }
+        return days;
+    }
+
     public static void main(String[] args) {
         //Task 1
         PrintSeparators();
@@ -52,6 +67,16 @@ public class Main {
         PrintSeparators();
 
         //Task 3
+        int distanceDelivery = 60;
+        Delivery(distanceDelivery);
+        int days = Delivery(distanceDelivery);
+        if (days == 1){
+            System.out.println("At a distance of " + distanceDelivery + " km. " + "delivery will take " +  days + " day");
+        }
+        else{
+            System.out.println("At a distance of " + distanceDelivery + " km. " + "delivery will take " +  days + " days");
+        }
+
 
     }
 }
