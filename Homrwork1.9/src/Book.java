@@ -1,12 +1,34 @@
+import java.util.Objects;
+
 public class Book {
     private int pages;
     private int year;
     private Author author;
+    private final String id;
 
-    public Book(Author author,int pages, int year) {
+
+    public Book(Author author,int pages, int year,String id) {
         this.author = author;
         this.pages = pages;
         this.year = year;
+        this.id = id;
+    }
+
+    public String toString() {
+        return author.toString() + "\n" + "page " + pages + "\n" + year + " year" ;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return pages == book.pages && year == book.year && Objects.equals(author, book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(pages, year, author);
     }
 
     public int getPages() {
