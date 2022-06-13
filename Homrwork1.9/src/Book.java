@@ -4,14 +4,12 @@ public class Book {
     private int pages;
     private int year;
     private Author author;
-    private final String id;
 
 
-    public Book(Author author,int pages, int year,String id) {
+    public Book(Author author,int pages, int year) {
         this.author = author;
         this.pages = pages;
         this.year = year;
-        this.id = id;
     }
 
     public String toString() {
