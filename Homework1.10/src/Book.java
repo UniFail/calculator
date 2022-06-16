@@ -12,9 +12,10 @@ public class Book {
         this.year = year;
     }
 
+    @Override
     public String toString() {
-        return author.toString() + "\n" + "page " + pages + "\n" + year + " year" ;
-    }
+            return author.toString() + "\n" + "page " + pages + "\n" + year + " year" ;
+        }
 
     @Override
     public boolean equals(Object o) {
